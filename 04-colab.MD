@@ -37,7 +37,6 @@ b = Variable(torch.cuda.FloatTensor([[1, 0, 4], [1, 5, 3], [2, 3, 0]]))
 !pip3 install keras
 ```
 
-
 # 전반적인 의견
 
 Colab은 내부동작은 당연히 빠르다. 

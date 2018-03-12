@@ -35,6 +35,12 @@ datalab beta create-gpu [datalab-instance-name]
 
 ![Datalab1](images/datalab1.png)
 
+현재 GPU Datalab 은 Beta라서 다음의 regions만 가능합니다.
+ 
+* us-east1
+* us-central1
+* asia-east1
+* europe-west1
 
 
 ## Cleaning Up Datalab Instance
@@ -49,6 +55,22 @@ datalab beta create-gpu [datalab-instance-name]
 datalab delete --delete-disk [instance-name]
 ```
 
-## Uncertain yet
+## Package Installation
 
-1. 일단 Datalab에서 `!pip3 install ~.whl` 을 사용해서 pytorch 설치가 안된다. 해당 플랫폼에서 지원하지 않는 파일이라고 나오면서 설치가 안된다. 다만 Datalab이 Google Compute Engine에 기반하고 있기 때문에 Compute Engine에 집접 접속해서 설치하면 되지 않을까 생각이 든다.
+#### Pytorch & TorchVision
+
+```
+!pip3 install http://download.pytorch.org/whl/cu80/torch-0.3.0.post4-cp35-cp35m-linux_x86_64.whl
+!pip3 install torchvision
+```
+
+설치 확인 코드
+
+```
+import torch
+from torch.autograd import Variable
+
+a = Variable(torch.cuda.FloatTensor([[1, 2, 3], [0, 1, 1], [1, 0, 3]]))
+b = Variable(torch.cuda.FloatTensor([[1, 0, 4], [1, 5, 3], [2, 3, 0]]))
+%time a.matmul(b) # a @ b
+```
