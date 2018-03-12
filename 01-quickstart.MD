@@ -2,30 +2,25 @@
 
 ##  Install SDK
 
-아래 내용대로 Ubuntu에 필요한 패키지 설치하면 끝
+설치방식에는 2가지가 있습니다.
+Interactive Installer는 사람이 쓰기 편하고, versioned SDK 를 다운로드 받아서 하는 경우는 특정 버젼을 받거나, automation으로 처리할때 사용합니다. 
 
-[Quickstart for Debian and Ubuntu](https://cloud.google.com/sdk/docs/quickstart-debian-ubuntu)
+1. [Interactive Installer](https://cloud.google.com/sdk/downloads#interactive)
+2. [Download versioned SDK](https://cloud.google.com/sdk/downloads#versioned)
 
-```bash
-# Create an environment variable for the correct distribution
-export CLOUD_SDK_REPO="cloud-sdk-$(lsb_release -c -s)"
-
-# Add the Cloud SDK distribution URI as a package source
-echo "deb http://packages.cloud.google.com/apt $CLOUD_SDK_REPO main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
-
-# Import the Google Cloud Platform public key
-curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
-
-# Update the package list and install the Cloud SDK
-sudo apt-get update && sudo apt-get install google-cloud-sdk
-```
-
-초기화 명령어를 통해서 Ubuntu 환경에 Google Cloud 계정 설정및 프로젝트를 설정할수 있다.
+Interactive Installer를 사용해서 설치하는 방법은 다음과 같이 한다.
 
 ```
+curl https://sdk.cloud.google.com | bash
+exec -l $SHELL
 gcloud init
 ```
-
+> Datalab GPU 활용시 다음의 regions으로 설정해줘야 합니다.  (현재 Beta버젼이라서 supported regions이 적음. `gcloud init` 할때 설정 하면 됩니다)
+>
+> - us-east1
+> - us-central1
+> - asia-east1
+> - europe-west1 
 
 # 주요 명령어 
 
