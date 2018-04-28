@@ -24,17 +24,15 @@ gcloud init
 > - asia-east1
 > - europe-west1 
 
-# 주요 명령어 
+# Authentication
 
-## Authentication
-
-#### 계정 리스트 보기
+## 계정 리스트 보기
 
 ```bash
 gcloud auth list
 ```
 
-####  설정 파일의 속성 보기
+##  설정 파일의 속성 보기
 
 
 ```bash
@@ -46,21 +44,21 @@ disable_usage_reporting = True
 Your active configuration is: [default]
 ```
 
-####  설정 파일 정보 그리고 SDK 설정 정보 확인
+##  설정 파일 정보 그리고 SDK 설정 정보 확인
 
 ```bash
 gcloud info
 ```
 
-## Projects
+# Projects
 
-#### 프로젝트 리스트 출력
+## 프로젝트 리스트 출력
 
 ```bash
 gcloud projects list
 ```
 
-####  프로젝트 생성
+##  프로젝트 생성
 
 새로운 프로젝트를 만들려면 다음의 명령어 실행.
 Project ID는 6자리 이상이며, 다른 사람이 만든 프로젝트 이름과 겹치면 안된다.
@@ -69,7 +67,7 @@ Project ID는 6자리 이상이며, 다른 사람이 만든 프로젝트 이름�
 gcloud projects create [project-id]
 ```
 
-####  프로젝트 변경
+##  프로젝트 변경
 
 ```bash
 gcloud config set project [project-id]
