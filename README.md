@@ -1,7 +1,11 @@
-# google-cloud-platform documents
+# Overview
 
 해당 repository는 구글 클라우드의 주요 서비스에 대한 간단한 설명과 주요 기능에 대한 튜토리얼을 포함하고 있습니다. 
 
-1. [Quick Start](https://github.com/AndersonJo/google-cloud-platform/blob/master/01-quickstart.md) : gcloud 설치및 주요 명령어
-2. [Datalab](https://github.com/AndersonJo/google-cloud-platform/blob/master/03-datalab.md) : Datalab설치와 Pytorch 설치. 
-3. [Colab](https://github.com/AndersonJo/google-cloud-platform/blob/master/04-colab.md) : Colab설정과 Keras 설치
+
+
+# Basic Tutorials
+
+1. [Quick Start](blob/master/01-quickstart.md) : gcloud 설치및 주요 명령어
+2. [Create Compute Engine Virtual Machine](blob/master/02-create-compute-engine.md) : EC2에 해당하는 가상 머신 생성 방법
+3. [Kubernetes Tutorial](blob/master/03-kubernetes-tutorial.md) : Kubernetes의 기본적인 튜토리얼
