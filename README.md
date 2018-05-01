@@ -6,6 +6,6 @@
 
 # Basic Tutorials
 
-1. [Quick Start](blob/master/01-quickstart.md) : gcloud 설치및 주요 명령어
-2. [Create Compute Engine Virtual Machine](blob/master/02-create-compute-engine.md) : EC2에 해당하는 가상 머신 생성 방법
-3. [Kubernetes Tutorial](blob/master/03-kubernetes-tutorial.md) : Kubernetes의 기본적인 튜토리얼
+1. [Quick Start](01-quickstart.md) : gcloud 설치및 주요 명령어
+2. [Create Compute Engine Virtual Machine](02-create-compute-engine.md) : EC2에 해당하는 가상 머신 생성 방법
+3. [Kubernetes Tutorial](03-kubernetes-tutorial.md) : Kubernetes의 기본적인 튜토리얼
