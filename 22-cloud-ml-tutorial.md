@@ -12,14 +12,25 @@
 ## Requirements
 
 ```bash
-pip3 install --upgrade google-api-python-client oauth2client
+pip3 install --upgrade google-api-python-client oauth2client virtualenv
 ```
 
-gcloud 
 
+
+## Virtual Environment 생성하기
+
+`gcloud ml-engine local` 등을 실행시키면 python2.7이 실행이 됩니다. 
+만약 python3.x 를 사용한다면, TensorFlow를 찾을수 없다든지 같은 에러를 경험하게 될 것입니다. python버젼을 명시해서 실행시킬수 없는 문제가 있기 땜누에 virtual environment 를 사용하면 문제를 우회해서 풀 수 있습니다. 
+
+먼저 가상환경을 생성합니다.
+
+```bash
+virtualenv cmle-env --python=/usr/bin/python3.5 --system-site-packages
+source cmle-env/bin/activate
+python -V
 ```
-CLOUDSDK_PYTHON=/usr/bin/python3.5
-```
+
+
 
 
 
