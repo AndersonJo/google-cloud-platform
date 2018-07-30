@@ -75,3 +75,16 @@ gcloud config set project [project-id]
 
 변경되었는지는 `gcloud info` 또는 `gcloud config list` 로 확인이 가능하다. 
 
+
+
+# Application
+
+## Login
+
+Application으로서 기본 로그인을 설정하기 위해서는 다음과 같이 합니다.
+자세한 문서는 [여기](https://cloud.google.com/sdk/gcloud/reference/auth/application-default/login)를 참조합니다.
+
+```
+gcloud auth application-default login
+```
+

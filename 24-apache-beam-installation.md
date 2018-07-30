@@ -10,6 +10,7 @@ sudo pip install --upgrade pip virtualenv setuptools apache-beam
 sudo pip install --upgrade apache-beam
 ```
 
+
 Extra requirements도 설치하기 위해서 다음과 같이 합니다.
 
 * apache-beam[gcp] : Google DataFlow, GCS IO, Datastore IO, BigQuery IO 에 필요
